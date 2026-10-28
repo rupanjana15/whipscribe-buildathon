@@ -41,10 +41,21 @@ My portfolio, which I migrated from vanilla HTML, CSS and JS to Astro without
 changing the design. Projects, events and experience are Markdown content
 collections, so adding a project means adding one file.
 
-Also: [ExplainGPT](https://github.com/rupanjana15/ExplainGPT), a UI for
-looking at an LLM's token probabilities and attention, and
-[Pack Pal](https://github.com/rupanjana15/pack-pal), an animated packing
-checklist.
+Also: [Pack Pal](https://github.com/rupanjana15/pack-pal), an animated
+packing checklist.
+
+## Team project
+
+### ExplainGPT — [anandrajaram21/ExplainGPT](https://github.com/anandrajaram21/ExplainGPT)
+*Final-year project, built with my project partner Anand Rajaram. FastAPI and
+Python backend, Next.js frontend.*
+
+A tool for seeing inside a language model. You generate text, then inspect the
+probability of each token and where the model's attention went. I worked on
+the backend: the FastAPI service that loads the model and serves generation,
+chat, model switching, token probabilities and attention. All the commits are
+under my partner's account, which is why the history shows his name and not
+mine.
 
 ## Open source
 
