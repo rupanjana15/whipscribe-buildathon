@@ -60,6 +60,24 @@ Proposals, with mockups:
 - **Did not file** the difference in punctuation between phone and laptop transcripts, because I couldn't confirm it was the same recording on both. **Did not add** the camera icon on audio files or "Ready" on a preview-only recording, to keep the list focused.
 - **Did not file duplicates** of bugs others had already reported (#146/#147, #39, #159, #294, #84/#83, #279, #192). I noted them separately instead.
 
+## Redesigning Home on a laptop
+
+After filing the issues I wanted to redesign the product, not only the transcript page, and starting with Home. I chose to finish the laptop version first and do the phone after. The design is in [design/home-laptop-c.html](design/home-laptop-c.html), and the options I picked from are in [design/home-laptop.html](design/home-laptop.html).
+
+What I decided:
+- Compared four versions side by side: today's Home, my own #320, a search-first one and one with a drop zone and cards. **I picked the drop zone and cards (C).**
+- Asked for C to be optimised, then for **everything to resize to the screen**, from a phone to a wide laptop.
+- Asked to **see the phone layout** inside the page, and to **add dark mode**.
+- Said it was **too cluttered**. That pass took out the extra search buttons, the trial meter, the icons and tags on every card, and the Folders section, so only the Record button stands out.
+- Noticed the **light/dark button had disappeared** in that pass and had it put back. The AI had removed it without asking me.
+- Decided when the design was final.
+
+What the AI did:
+- Built the options and every version of C as HTML from my direction, using my own three recordings' names. It didn't make up any of their content.
+- Added the states a real page needs: a new account with nothing in it, and a file uploading. The upload shows one percentage and one bar, which is the fix for my #306.
+- Checked each version in a browser at phone, tablet and laptop widths, in light and dark, and fixed what didn't fit. For example, the search box on a phone was 22 px wider than the screen.
+- Took out two things it couldn't back up: a "57 s" cost on the Finish transcript button (I only had 34 s left) and a "Safe to leave this page" line, because we don't know how WhipScribe handles either.
+
 ## What I learned
 
 - Check the existing issues before filing. Several things I found were already reported, and a comment with my screenshot is more useful than a duplicate.
@@ -67,6 +85,7 @@ Proposals, with mockups:
 - If I get lost in an app, it's not just me being careless. If I couldn't find Home, other normal users won't either.
 - A good proposal removes more than it adds: 5 boxes become 1 panel, 22 menu rows become 12.
 - Write down only what I saw, not why I think it happens. I don't know how WhipScribe counts free minutes, so I described what the screen showed.
+- Seeing options side by side made choosing easy. Saying "less cluttered" and then looking at what got removed taught me what I actually wanted to keep, like the light/dark button.
 
 ## My process, step by step
 
@@ -78,3 +97,4 @@ Proposals, with mockups:
 6. Sorted everything into phone and laptop, set the priorities, and listed bugs others had already reported separately.
 7. Turned my biggest complaints (cramped Home, hard-to-use menu, floating laptop layout) into three proposals, directing the mockups until they looked right to me.
 8. Had the issues rewritten in my own plain words and read through them. Then I asked Claude to file them from my GitHub account through my Chrome, with the screenshots attached: bugs #305–#317, proposals #318–#320.
+9. Moved on to redesigning Home, laptop first. Picked one of four options, then shaped it over several rounds (optimise, resize to any screen, dark mode, less clutter, bring the light/dark button back) until I called it final.
